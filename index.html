@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBridge | Personal Command Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow top-left"></div>
+    <div class="background-glow bottom-right"></div>
+
+    <main class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <h1>TaskBridge</h1>
+            </div>
+            <p class="subtitle">Securely assign tasks to Vineet's Command Center</p>
+        </header>
+
+        <section class="form-card">
+            <div class="glass-bg"></div>
+            <form id="task-form">
+                <div class="input-group">
+                    <label for="username">Who are you?</label>
+                    <input type="text" id="username" placeholder="e.g. Mom, Dad, Rushabh" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="task-title">What's the task?</label>
+                    <textarea id="task-title" placeholder="Describe the task..." required></textarea>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group half">
+                        <label for="urgency">Urgency</label>
+                        <select id="urgency">
+                            <option value="normal">Normal</option>
+                            <option value="important">Important</option>
+                            <option value="immediate">🔥 IMMEDIATE</option>
+                        </select>
+                    </div>
+                    <div class="input-group half">
+                        <label for="secret-key">Secret Password</label>
+                        <input type="password" id="secret-key" placeholder="Enter Code" required>
+                    </div>
+                </div>
+
+                <button type="submit" id="submit-btn">
+                    <span class="btn-text">Push to Reminders</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </form>
+            <div id="status-message" class="hidden"></div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 TaskBridge Sync Engine | Powered by Supabase</p>
+        </footer>
+    </main>
+
+    <!-- Supabase JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
