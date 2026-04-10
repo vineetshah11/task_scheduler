@@ -45,9 +45,19 @@
                         </select>
                     </div>
                     <div class="input-group half">
-                        <label for="secret-key">Secret Password</label>
-                        <input type="password" id="secret-key" placeholder="Enter Code" required>
+                        <label for="deadline">Timing</label>
+                        <select id="deadline">
+                            <option value="ASAP">ASAP</option>
+                            <option value="Today">Today</option>
+                            <option value="Tomorrow">Tomorrow</option>
+                            <option value="This Week">This Week</option>
+                        </select>
                     </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="secret-key">Secret Password</label>
+                    <input type="password" id="secret-key" placeholder="Enter Code" required>
                 </div>
 
                 <button type="submit" id="submit-btn">

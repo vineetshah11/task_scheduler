@@ -34,6 +34,7 @@ taskForm.addEventListener('submit', async (e) => {
     const giver = document.getElementById('username').value;
     const title = document.getElementById('task-title').value;
     const urgency = document.getElementById('urgency').value;
+    const deadline = document.getElementById('deadline').value;
     const key = document.getElementById('secret-key').value;
 
     // 1. Validate Secret Key
@@ -61,6 +62,7 @@ taskForm.addEventListener('submit', async (e) => {
                     giver: giver, 
                     title: title, 
                     urgency: urgency, 
+                    deadline: deadline,
                     status: 'pending',
                     created_at: new Date().toISOString()
                 }
