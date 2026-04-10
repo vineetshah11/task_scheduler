@@ -35,24 +35,16 @@
                     <textarea id="task-title" placeholder="Describe the task..." required></textarea>
                 </div>
 
-                <div class="input-row">
-                    <div class="input-group half">
-                        <label for="urgency">Urgency</label>
-                        <select id="urgency">
-                            <option value="normal">Normal</option>
-                            <option value="important">Important</option>
-                            <option value="immediate">🔥 IMMEDIATE</option>
-                        </select>
-                    </div>
-                    <div class="input-group half">
-                        <label for="deadline">Timing</label>
-                        <select id="deadline">
-                            <option value="ASAP">ASAP</option>
-                            <option value="Today">Today</option>
-                            <option value="Tomorrow">Tomorrow</option>
-                            <option value="This Week">This Week</option>
-                        </select>
-                    </div>
+                <div class="input-group">
+                    <label for="urgency">Urgency / Timing</label>
+                    <select id="urgency">
+                        <option value="normal">Normal</option>
+                        <option value="important">Important</option>
+                        <option value="immediate">🔥 IMMEDIATE (ASAP)</option>
+                        <option value="today">📅 Today</option>
+                        <option value="tomorrow">🗓️ Tomorrow</option>
+                        <option value="this-week">🗓️ This Week</option>
+                    </select>
                 </div>
 
                 <div class="input-group">
