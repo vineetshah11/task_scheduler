@@ -86,11 +86,3 @@ taskForm.addEventListener('submit', async (e) => {
         submitBtn.querySelector('.btn-text').innerText = 'Push to Reminders';
     }
 });
-
-// Helper for setup (call this from console if needed)
-window.setupTaskBridge = (url, key, familyKey) => {
-    localStorage.setItem('SB_URL', url);
-    localStorage.setItem('SB_KEY', key);
-    localStorage.setItem('FAMILY_KEY', familyKey);
-    location.reload();
-};
